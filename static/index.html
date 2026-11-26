@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科研项目管理平台</title>
+<link rel="stylesheet" href="/static/style.css?v=20261126a">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">研</div>
+      <div><div class="brand-title">科研项目管理</div><div class="brand-sub">Research Manager</div></div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#/dashboard" data-nav="dashboard"><span class="nav-ico">▦</span>总览看板</a>
+      <a href="#/projects" data-nav="projects"><span class="nav-ico">▤</span>项目档案</a>
+      <a href="#/achievements" data-nav="achievements"><span class="nav-ico">◆</span>成果库</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="cfg-line" id="cfgLine">—</div>
+      <div class="cfg-hint">数据存于本地 SQLite<br>文件仅存相对路径索引</div>
+    </div>
+  </aside>
+  <main class="main" id="main"><div class="loading">加载中…</div></main>
+</div>
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+<script src="/static/app.js?v=20261126a"></script>
+</body>
+</html>
